@@ -39,8 +39,10 @@ function algor() {
 }
 function guessLetter() {
     var guess = document.getElementById('guess').value;
+    var guess = guess.toLowerCase;
     var guess = guess.split('');
     var correct = false;
+    algor();
     if (guess.length == word.length && guess.toLowerCase == word.toLowerCase) {
         document.getElementById('word').innerText = arr2str(word);
         return 1;
@@ -58,6 +60,7 @@ function guessLetter() {
         document.getElementById('guessLeft').innerText = document.getElementById('guessLeft').innerText - 1
     }
     document.getElementById('guess').value = "";
+    algor();
 }
 function arr2str(arr) {
     var output = "";
