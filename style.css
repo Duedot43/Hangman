@@ -1,0 +1,16 @@
+/* Regular setting */
+:root {
+    --body-bg: #dadada;
+    --table-bg: white;
+    --body-color: #000000;
+}
+
+/* Dark setting */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --table-bg: #1a1e1f;
+        --body-bg: #0d1113;
+        --body-color: #FFFFFF;
+    }
+}
+
