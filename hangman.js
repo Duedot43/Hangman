@@ -39,7 +39,6 @@ function algor() {
 }
 function guessLetter() {
     var guess = document.getElementById('guess').value;
-    var guess = guess.toLowerCase;
     var guess = guess.split('');
     var correct = false;
     algor();
